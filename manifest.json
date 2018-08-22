@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Investigation Anonymizer 5000",
+    "description": "Keep your brain safe from thoughtcrimes.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
